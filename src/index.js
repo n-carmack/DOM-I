@@ -40,3 +40,51 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+const headerNav = document.querySelector('nav')
+headerNav.children[0].classList.add('italic')
+headerNav.children[1].classList.add('italic')
+headerNav.children[2].classList.add('italic')
+headerNav.children[3].classList.add('italic')
+headerNav.children[4].classList.add('italic')
+headerNav.children[5].classList.add('italic')
+headerNav.children[0].textContent = siteContent.nav['nav-item-1']
+headerNav.children[1].textContent = siteContent.nav['nav-item-2']
+headerNav.children[2].textContent = siteContent.nav['nav-item-3']
+headerNav.children[3].textContent = siteContent.nav['nav-item-4']
+headerNav.children[4].textContent = siteContent.nav['nav-item-5']
+headerNav.children[5].textContent = siteContent.nav['nav-item-6']
+
+const cta = document.querySelector('section.cta')
+cta.children[0].textContent = siteContent.cta.h1
+cta.children[1].textContent = siteContent.cta.button
+
+const mainContent = document.querySelector('section.main-content')
+mainContent.children[0].children[0].children[0].textContent = siteContent['main-content']['features-h4']
+mainContent.children[0].children[0].children[1].textContent = siteContent['main-content']['features-content']
+mainContent.children[0].children[1].children[0].textContent = siteContent['main-content']['about-h4']
+mainContent.children[0].children[1].children[1].textContent = siteContent['main-content']['about-content']
+mainContent.children[2].children[0].children[0].textContent = siteContent['main-content']['services-h4']
+mainContent.children[2].children[0].children[1].textContent = siteContent['main-content']['services-content']
+mainContent.children[2].children[1].children[0].textContent = siteContent['main-content']['product-h4']
+mainContent.children[2].children[1].children[1].textContent = siteContent['main-content']['product-content']
+mainContent.children[2].children[2].children[0].textContent = siteContent['main-content']['vision-h4']
+mainContent.children[2].children[2].children[1].textContent = siteContent['main-content']['vision-content']
+
+const contactSection = document.querySelector('section.contact')
+contactSection.children[0].textContent = siteContent.contact['contact-h4']
+contactSection.children[1].textContent = siteContent.contact.address
+contactSection.children[2].textContent = siteContent.contact.phone
+contactSection.children[3].textContent = siteContent.contact.email
+
+const footerTag = document.querySelector('footer a')
+footerTag.textContent = siteContent.footer.copyright
+footerTag.classList.add('bold')
+
+const logoImg = document.querySelector('#logo-img')
+logoImg.src = siteContent.images['logo-img']
+const ctaImg = document.querySelector('#cta-img')
+ctaImg.src = siteContent.images['cta-img']
+const accentImg = document.querySelector('#middle-img')
+accentImg.src = siteContent.images['accent-img']
+
